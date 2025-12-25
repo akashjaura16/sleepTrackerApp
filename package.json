@@ -1,0 +1,60 @@
+{
+  "name": "alive",
+  "version": "1.0.0",
+  "description": "Alive Sleep Tracking App",
+  "keywords": [
+    "Sleep",
+    "Tracking",
+    "Medical",
+    "Private",
+    "Auth0",
+    "MongoDB",
+    "Express",
+    "Materialize",
+    "Socket.IO"
+  ],
+
+  "homepage": "https://github.com/akashjaura16/sleepTrackerApp#readme",
+  "bugs": {
+    "url": "https://github.com/akashjaura16/sleepTrackerApp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akashjaura16/sleepTrackerApp.git"
+  },
+  "license": "ISC",
+  "author": "Team 33",
+  "contributors": [
+    {
+      "name": "Andrej Kudriavcev",
+      "studentID": "s224939307"
+    },
+    {
+      "name": "Akashdeep Singh",
+      "studentID": "s224911605"
+    },
+    {
+      "name": "Mi Vo",
+      "studentID": "s224505179"
+    },
+    {
+      "name": "Naren Madabooshi Onamalai",
+      "studentID": "s225281581"
+    },
+    {
+      "name": "nWinston Dang",
+      "studentID": "s222038631"
+    }
+  ],
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
