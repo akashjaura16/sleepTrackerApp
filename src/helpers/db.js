@@ -28,8 +28,6 @@ function bindConnectionListeners() {
 
   mongoose.connection.on('disconnected', () => {
     console.log('MongoDB connection disconnected');
-    // NOTE: don't set connectionPromise = null here in general
-    // (more on that below)
   });
 }
 
@@ -61,7 +59,7 @@ async function connectDb(uri, options = {}) {
           ...options,
         })
         .catch((err) => {
-          // Important: allow retry if the initial connect fails
+          // allow retry if the initial connect fails
           connectionPromise = null;
           throw err;
         });
