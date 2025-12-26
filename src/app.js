@@ -20,6 +20,27 @@ function createApp() {
 
   app.use('/', routes);
 
+  // Handle 404 Not Found responses
+  app.use((req, res) => {
+    res.status(404).render('pages/errors/404', {
+      title: 'Page Not Found',
+    });
+  });
+
+  // Handle unexpected errors
+  app.use((err, req, res, next) => {
+    if (res.headersSent) {
+      return next(err);
+    }
+
+    // Log the error for diagnostics
+    console.error('Unhandled error:', err);
+
+    res.status(err.status || 500).render('pages/errors/500', {
+      title: 'Server Error',
+    });
+  });
+
   return app;
 }
 
