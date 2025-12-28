@@ -72,9 +72,10 @@ An example configuration file (.env.example) is included in the repository to do
 
 How to Run the Application
 1. Install dependencies
+```
 npm install
-
-2. Ensure MongoDB is running
+```
+3. Ensure MongoDB is running
 
 Start MongoDB locally
 or
@@ -82,12 +83,14 @@ or
 Update the MONGODB_URI value in the .env file to use MongoDB Atlas
 
 3. Start the server
+```
 cd src
 node server.js
-
-4. Open the application in a browser
+```
+5. Open the application in a browser
+```
 http://localhost:3000
-
+```
 Static Assets
 
 Static files such as CSS and JavaScript are served from the public directory using Express static middleware.
