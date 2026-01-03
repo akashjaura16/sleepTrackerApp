@@ -1,4 +1,7 @@
-<% const currentActiveMenu = typeof activeMenu === 'undefined' ? '' : activeMenu; %>
+<%
+  const menu = typeof activeMenu !== 'undefined' ? activeMenu : '';
+%>
+
 <li class="<%= currentActiveMenu === 'home' ? 'active' : '' %>">
   <a href="/">Home</a>
 </li>
