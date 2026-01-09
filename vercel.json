@@ -6,10 +6,5 @@
   "routes": [
     { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/api" }
-  ],
-  "functions": {
-    "api/index.js": {
-      "includeFiles": "{public/**,src/views/**}"
-    }
-  }
+  ]
 }
