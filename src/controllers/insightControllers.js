@@ -177,6 +177,6 @@ feature/insights-page
   renderInsights,
   renderInsightDetail,
 };
-=======
+
 };
 
