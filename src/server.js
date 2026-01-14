@@ -39,6 +39,7 @@ async function startServer() {
   }
 }
 
+
 // Start the server
 void startServer();
 
