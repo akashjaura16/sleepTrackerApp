@@ -2,6 +2,7 @@ const { expect } = require('chai');
 const sinon = require('sinon');
 const { sleepEntryController } = require('../../../src/controllers');
 const { sleepEntryService } = require('../../../src/services');
+
 const exportCSV = require('../../../src/helpers/exportCSV');
 
 describe('Sleep Entry Controller', () => {
@@ -18,7 +19,7 @@ describe('Sleep Entry Controller', () => {
       locals: {
         userRecord: { _id: mockUserId }
       },
-      send: sinon.stub(),
+      setHeader: sinon.stub(),
       status: sinon.stub().returnsThis(),
       send: sinon.stub(),
       json: sinon.stub(),
