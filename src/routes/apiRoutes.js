@@ -16,6 +16,14 @@ const router = express.Router();
 // Base welcome endpoint
 router.get('/', apiControllers.apiWelcome);
 
+// Student ID endpoint for HD submission
+router.get('/student', (req, res) => {
+	res.json({
+		name: 'akashdeep singh',
+		studentId: '224911605'
+	});
+});
+
 // API Namespaces
 router.use('/articles', apiArticleRoutes);
 router.use('/sleep-entries', sleepEntryRoutes);
